@@ -1,0 +1,59 @@
+@import 'https://site-assets.fontawesome.com/releases/v6.1.0/css/all.css';
+@import 'https://fonts.googleapis.com/css?family=Outfit:100,300,800';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in-out;
+}
+
+html, body, #app{
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  max-height: 100vh;
+  font: {
+    size: 14px;
+    family: 'Outfit', sans-serif;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.link--active {
+  i {
+    color: #dc0000;
+  }
+  color: #ffff3e;
+}
+
+.main--wrapper {
+  flex:1;
+  overflow: hidden;
+  display:flex;
+  flex-direction: column;
+  main {
+    height:calc(100% - 3rem);
+    overflow-y: auto;
+  }
+}
+
+.divider {
+  border:none;
+  height: 1px;
+  background: #2d2d2d;
+  margin:.25rem 0 .75rem 0;
+}
+.spacer {
+  border:none;
+  background: none;
+  margin-top:1.5rem;
+}
