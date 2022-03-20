@@ -14,30 +14,40 @@
     <h1>AREAS</h1>
     <hr class="divider" />
     <div class="links">
-      <a href="http://inteud.github.io/hydro" target="_blank">Hidrología</a>
-      <a href="http://inteud.github.io/hydro" target="_blank">Suelos</a>
-      <a href="http://inteud.github.io/hydro" target="_blank">Concretos</a>
+      <CardLink
+        v-for="(link, key) in links"
+        :key="key"
+        :title="link.title"
+        :icon="link.icon"
+        :to="link.to"
+        style="width: calc(calc(100% / 3) - 1rem)"
+      />
     </div>
   </div>
 </template>
+
+<script setup>
+import { ref } from "vue";
+import CardLink from "@/components/cardLink.vue";
+
+const domain = ref("http://inteud.github.io/");
+const links = ref([
+  { title: "hidrología", icon: "hydro-power", to: domain.value + "hydro" },
+  { title: "topografía", icon: "eye-circle-outline", to: "/comming" },
+  { title: "suelos", icon: "hexagon-multiple", to: "/comming" },
+  { title: "concretos", icon: "wall", to: "/comming" },
+  { title: "estructuras", icon: "tower-fire", to: "/comming" },
+  { title: "software", icon: "desktop-classic", to: "/comming" },
+  { title: "hardware", icon: "video-input-component", to: "/comming" },
+  { title: "cálculos", icon: "microsoft-excel", to: "/comming" },
+  { title: "librería", icon: "book-open-page-variant", to: "/comming" },
+]);
+</script>
 
 <style lang="scss" scoped>
 .links {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-around;
-  a {
-    align-items: center;
-    background: #2d2d2d;
-    border-radius: 0.25rem;
-    color: white;
-    display:flex;
-    font-size: 1.2rem;
-    justify-content: center;
-    margin: .5rem;
-    padding: 0.25rem 0.75rem;
-    width: calc(calc(100% / 3) - 1rem);
-  }
 }
 </style>

@@ -18,7 +18,10 @@
   padding: 1rem;
   img {
     width: auto;
-    max-height: 4rem;
+    height: 3rem;
+        @media screen and (min-width: 768px) {
+      height: 4rem;
+    }
   }
   h1 {
     font-size: 1.25rem;
@@ -28,7 +31,7 @@
     @media screen and (min-width: 520px) {
       font-size: 1.5rem;
     }
-    @media screen and (min-width: 770px) {
+    @media screen and (min-width: 768) {
       font-size: 2rem;
     }
   }

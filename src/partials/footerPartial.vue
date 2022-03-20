@@ -1,16 +1,9 @@
 <template>
   <footer class="footer">
-    <p>
-      Universidad Distrital Francisco Jose de Caldas
-      <br />Facultad Tecnologica
-      <br />
-      {{ year }}
-    </p>
     <p style="color: #ffff3e">
-      <i class="fad fa-terminal"></i>
       Creado y manenido por
       <br />
-      <router-link to="/me">Edwin Marroquin</router-link>
+      <router-link to="/me">Edwin Marroquin ( 2021 -{{ year }} )</router-link>
     </p>
   </footer>
 </template>
@@ -26,8 +19,10 @@ const year = ref(new Date().getFullYear());
   color: white;
   padding: 1rem;
   text-align: center;
+  display:flex;
+  justify-content: space-around;
   p:first-child {
-    color: #dc0000;
+    color: white;
   }
   p:last-child {
     color: #ffff3e;
