@@ -40,7 +40,7 @@
       >
         <i class="fab fa-linkedin-in"></i>
       </a>
-      <router-link style="color:#ffff3e" :to="`/#/collaborator/${user.id}`">
+      <router-link style="color:#ffff3e" :to="`/collaborator/${user.id}`">
         <i class="fad fa-address-card"></i>
       </router-link>
     </div>
