@@ -1,7 +1,9 @@
 <template>
   <div class="header">
-    <img src="../assets/logo_clean.svg" alt />
-    <h1>Area de investigacion Tecnologica de la Universidad Distrital</h1>
+    <a href="https://inteud.github.io/">
+      <img src="../assets/logo_clean.svg" alt="inteud" />
+    </a>
+    <h1>Area de investigación Tecnológica de la Universidad Distrital</h1>
   </div>
 </template>
 
@@ -19,7 +21,7 @@
   img {
     width: auto;
     height: 3rem;
-        @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
       height: 4rem;
     }
   }
