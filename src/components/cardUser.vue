@@ -54,7 +54,7 @@
       >
         <i class="fab fa-linkedin-in"></i>
       </a>
-      <a style="color:#ffff3e" :href="`/collaborator/${user.id}`">
+      <a style="color:#ffff3e" :href="`/#/collaborator/${user.id}`">
         <i class="fad fa-address-card"></i>
       </a>
     </div>
