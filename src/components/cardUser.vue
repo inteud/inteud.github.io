@@ -5,32 +5,18 @@
         <img :src="user.photo" alt />
       </div>
       <div class="user--header-info">
-        <h2 v-if="user.name != null" class="user--header-info name">
-          {{ user.name }}
-        </h2>
-        <p v-if="user.email != null" class="user--header-info email">
-          {{ user.email }}
-        </p>
-        <div v-if="user.description != null" class="user--header-description">
-          {{ user.description }}
-        </div>
+        <h2 v-if="user.name != null" class="user--header-info name">{{ user.name }}</h2>
+        <p v-if="user.email != null" class="user--header-info email">{{ user.email }}</p>
+        <div v-if="user.description != null" class="user--header-description">{{ user.description }}</div>
       </div>
     </div>
     <div v-if="user.skills" class="user--skills">
-      <div
-        v-for="(skill, key) in user.skills"
-        :key="key"
-        class="user--skills-item"
-      >
+      <div v-for="(skill, key) in user.skills" :key="key" class="user--skills-item">
         <span>{{ skill }}</span>
       </div>
     </div>
     <div v-if="user.network != null" class="user--network">
-      <a
-        v-if="user.network.site != null"
-        :href="user.network['site']"
-        target="_blank"
-      >
+      <a v-if="user.network.site != null" :href="user.network['site']" target="_blank">
         <i class="fad fa-browser"></i>
       </a>
       <a
@@ -54,9 +40,9 @@
       >
         <i class="fab fa-linkedin-in"></i>
       </a>
-      <a style="color:#ffff3e" :href="`/#/collaborator/${user.id}`">
+      <router-link style="color:#ffff3e" :to="`/#/collaborator/${user.id}`">
         <i class="fad fa-address-card"></i>
-      </a>
+      </router-link>
     </div>
   </div>
 </template>
