@@ -33,14 +33,14 @@ import CardLink from "@/components/cardLink.vue";
 const domain = ref("http://inteud.github.io/");
 const links = ref([
   { title: "hidrología", icon: "hydro-power", to: domain.value + "hydro" },
-  { title: "topografía", icon: "eye-circle-outline", to: "/comming" },
-  { title: "suelos", icon: "hexagon-multiple", to: "/comming" },
-  { title: "concretos", icon: "wall", to: "/comming" },
-  { title: "estructuras", icon: "tower-fire", to: "/comming" },
-  { title: "software", icon: "desktop-classic", to: "/comming" },
-  { title: "hardware", icon: "video-input-component", to: "/comming" },
-  { title: "cálculos", icon: "microsoft-excel", to: "/comming" },
-  { title: "librería", icon: "book-open-page-variant", to: "/comming" },
+  { title: "topografía", icon: "eye-circle-outline" },
+  { title: "suelos", icon: "hexagon-multiple"},
+  { title: "concretos", icon: "wall"},
+  { title: "estructuras", icon: "tower-fire"},
+  { title: "software", icon: "desktop-classic"},
+  { title: "hardware", icon: "video-input-component"},
+  { title: "cálculos", icon: "microsoft-excel"},
+  { title: "librería", icon: "book-open-page-variant"},
 ]);
 </script>
 
@@ -49,5 +49,11 @@ const links = ref([
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+}
+
+a:not([href]) {
+  pointer-events: none;
+  opacity: .25;
+  user-select:none;
 }
 </style>

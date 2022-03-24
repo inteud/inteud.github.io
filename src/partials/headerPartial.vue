@@ -1,13 +1,15 @@
 <template>
   <div class="header">
     <a href="https://inteud.github.io/">
-      <img src="../assets/logo_clean.svg" alt="inteud" />
+      <!-- <img src="../assets/logo_clean.svg" alt="inteud" /> -->
+      <logoInteud class="logo"/>
     </a>
     <h1>Area de investigación Tecnológica de la Universidad Distrital</h1>
   </div>
 </template>
 
 <script setup>
+import logoInteud from '@/components/logoInteud.vue';
 </script>
 
 <style lang="scss" scoped>
@@ -18,7 +20,7 @@
   background: #2d2d2d;
   color: white;
   padding: 1rem;
-  img {
+  .logo {
     width: auto;
     height: 3rem;
     @media screen and (min-width: 768px) {
