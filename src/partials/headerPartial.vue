@@ -1,6 +1,7 @@
 <template>
   <div class="header">
-    <a href="https://inteud.github.io/">
+    <!-- <a href="https://inteud.github.io/"> -->
+    <a href="/">
       <!-- <img src="../assets/logo_clean.svg" alt="inteud" /> -->
       <logoInteud class="logo"/>
     </a>

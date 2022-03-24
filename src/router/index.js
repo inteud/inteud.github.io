@@ -23,11 +23,6 @@ const router = createRouter({
       component: () => import("../views/CollaboratorView.vue"),
     },
     {
-      path: "/about",
-      name: "about",
-      component: () => import("../views/AboutView.vue"),
-    },
-    {
       path: "/comming",
       name: "comming",
       component: () => import("../views/CommingView.vue"),

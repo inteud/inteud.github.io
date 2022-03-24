@@ -1,0 +1,1 @@
+import{_ as e}from"./index.f8433694.js";import{o as _,c}from"./vendor.76dbdf51.js";const n={};function o(r,t){return _(),c("h1",null,"En construcci\xF3n")}var i=e(n,[["render",o],["__scopeId","data-v-f0e80cb0"]]);export{i as default};
